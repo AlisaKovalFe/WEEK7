@@ -1,0 +1,1767 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    background: #FFFFFF;
+}
+
+.mission-colorstyle {
+    color: #3730A3;
+}
+
+/*----------------------------------------медиа запрос для десктопов------------------------------------------------*/
+
+@media screen and (min-width: 1024px) {
+/*----------------------------------------Header------------------------------------------------*/
+
+.container { 
+    width: 100vw;
+    height: 100vh;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "hd hd hd"
+        "mn mn mn"
+        "footer footer footer"; этот грид контейнер никак не влияет на макет, по сути он не нужен*/
+}
+    .header-container {
+        grid-area: hd;
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 0.2fr 1.5fr 0.2fr;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: 
+            ". . . . ."
+            ". header-logo . header-nav .";
+    }
+
+    .main-container {
+        grid-area: mn;
+    }
+
+    .header-logo {
+        grid-area: header-logo;
+    }
+
+    .header-nav {   
+        grid-area: header-nav;
+        display: grid;
+        grid-template-columns: repeat(4, auto);    
+        align-items: center;
+        justify-items: end;
+    }   
+
+    .header-nav a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+    .header-nav button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7em 1.5em;
+        width: 8em;
+        height: 3em;    
+        background: #FFFFFF;
+        border: 1px solid #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.1em;
+        line-height: 1.8em;
+        color: #3730A3;
+    }
+
+    .header-nav a:hover {
+        text-decoration: underline;
+    }
+
+    /*----------------------------------------Main------------------------------------------------*/
+    /*----------------------------------------Firstpage-------------------------------------------*/
+
+    .firstpage {
+        display: grid;
+        grid-template-columns: 0.2fr 1.5fr 0.1fr 1.3fr 0.2fr;  
+        grid-template-areas: 
+            ". about-desighner . fotodisaighner .";
+        margin: 7em 0 7em;
+        
+    }
+    
+    .about-desighner {
+        grid-area: about-desighner;   
+    }
+    
+    .fotodisaighner {
+        grid-area: fotodisaighner; 
+        width: 100%;   
+        max-width: 100%;
+        
+    }
+    
+    .about-desighner h1 {
+        margin: 0 0 0.7em;
+        font-weight: 700;
+        font-size: 3em;
+        line-height: 1.1em;
+        color: #1F2937;
+    }
+
+    .about-desighner h2 {
+        margin: 0 0 2.5em;
+        font-weight: 500;
+        font-size: 1.3em;
+        line-height: 1.8em;
+        color: #4338CA;   
+    }
+    
+    .first-p {
+        margin: 0 0 2.5em;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+    .second-p {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1em;
+        color: #6B7280;
+    }
+    
+
+    .buttons-firstpage {
+        margin: 0 0 2.5em;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        column-gap: 1.5em;
+    }
+
+    button.hire-me {    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 8em;
+        height: 3.3em;
+        padding: 0.8em 2em;
+        background: #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        color: #FFFFFF;
+    }
+    
+    .read-more {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 10em;
+        height: 3.3em;
+        padding: 0.8em 2em;
+        background: #FFFFFF;
+        border: 1px solid #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    /*----------------------------------------Secondpage-------------------------------------------*/
+
+    .secondpage {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 0.3fr;
+        grid-template-areas: 
+        ". mission .";
+        margin-bottom: 7em;
+    }
+
+    .mission {
+        grid-area: mission;
+        font-weight: 600;
+        font-size: 3.5vw;
+        line-height: 4.5vw;
+        text-align: center;
+        color: #1F2937;
+    }
+    
+
+    /*----------------------------------------Thirdpage-------------------------------------------*/
+    .thirdpage {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;   
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            ". disighnworks part1 part4 ."
+            ". disighnworks part2 part5 ."
+            ". disighnworks part3 part6 .";
+        column-gap: 3%;    
+        margin-bottom: 9em;
+    }
+    
+    .disighnworks {
+        grid-area: disighnworks;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .thirdpage-part-one {
+        grid-area: part1;
+    }
+    
+    .thirdpage-part-two {
+        grid-area: part2;
+    }
+    
+    .thirdpage-part-three {
+        grid-area: part3;
+    }
+    
+    .thirdpage-part-four {
+        grid-area: part4;
+    }
+    
+    .thirdpage-part-five {
+        grid-area: part5;
+    }
+    
+    .thirdpage-part-six {
+        grid-area: part6;
+    }
+
+    .thirdpage h3 {
+        margin-top: 0px;
+        font-weight: 600;
+        font-size: 1.1em;
+        line-height: 1em;
+        color: #1F2937;
+    }
+    
+    .activity {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.1em;
+        color: #6B7280;
+    }
+    
+    .seeworks {
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1em;
+        color: #3730A3;
+    }
+
+    /*----------------------------------------Fourthpage-------------------------------------------*/
+    .fourthpage {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:   
+            ". trust-p ."
+            ".clients .";
+        background: #FEF2F2;  
+        margin-bottom: 7em;
+    }
+
+    .clients {
+        padding-bottom: 5em;
+        grid-area: clients;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-self: center;
+    }
+
+    .fourthpage p {
+        padding-top: 2em;
+        grid-area: trust-p;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: #9CA3AF;    
+    }
+
+    /*----------------------------------------Fifthpage-------------------------------------------*/
+    .fifthpage {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-areas: 
+        ". customerfeed .";
+        margin-bottom: 7em;
+    }
+
+    .customerfeed {
+        grid-area: customerfeed;
+        font-weight: 600;
+        font-size: 3.5vw;
+        line-height: 4.5vw;
+        text-align: center;
+        color: #1F2937;
+    }
+
+    /*----------------------------------------Sixpage-------------------------------------------*/
+    .sixpage {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". bus door ."
+        ". trees door ."
+        ". stick stick .";
+        gap: 2%;
+        margin-bottom: 10em;
+    }
+    
+    .bus {
+        grid-area: bus;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .door {
+        grid-area: door;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .trees {
+        grid-area: trees;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .stick {
+        grid-area: stick;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    /*----------------------------------------Seventhpage-------------------------------------------*/
+    .seventhpage {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;  
+        grid-template-areas: 
+            ". chart dollar loupe .";
+        text-align: center;
+        gap: 5%;    
+        margin-bottom: 4em;
+    }
+    
+    .chart {
+        grid-area: chart;
+    }
+    
+    .dollar {
+        grid-area: dollar;
+    }
+    
+    .loupe {
+        grid-area: loupe;
+    }
+
+    .seventhpage h5 {
+        font-weight: 600;
+        font-size: 2.3vw;
+        line-height: 2.3vw;
+        text-align: center;
+        color: #374151;
+        margin-bottom: 1em;
+    }
+    
+    .seventhpage p {
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        text-align: center;
+        color: #9CA3AF;
+    } 
+
+    /*----------------------------------------Eightpage-------------------------------------------*/
+    .eightpage {
+        display:grid;
+        grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas:         
+            ". career career career ."
+            ". company position year .";
+        justify-items: center;        
+    }
+    
+    .company {
+        grid-area: company;
+    }
+    
+    .position {
+        grid-area: position;
+    }
+    
+    .year {
+        grid-area: year;
+    }
+
+    .career {
+        grid-area: career;
+        font-weight: 600;
+        font-size: 3em;
+        line-height: 4.5em;
+        text-align: center;
+        color: #1F2937;
+    }
+    
+    .eightpage h5 {
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1em;
+        color: #6B7280;
+        text-align: center;
+    }
+    
+    .eightpage p {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+    .company-style {
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 1.5em;
+        color: #1F2937;
+    }
+    
+
+    /*----------------------------------------Footer-------------------------------------------*/
+    .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:     
+        ". contact ."
+        ". footer-p ."
+        ". networks .";
+        text-align: center;
+        background: #FEF2F2;
+    }
+    
+    .networks {
+        grid-area: networks;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer h4 {
+        grid-area: contact;
+        font-weight: 500;
+        font-size: 3em;
+        line-height: 1.5em;
+        text-align: center;
+        color: #374151;
+    }
+
+    .footer p {
+        grid-area: footer-p;
+        font-weight: 400;
+        font-size: 1.1em;
+        line-height: 1.8em;
+        text-align: center;
+        color: #9CA3AF;
+    }
+} 
+
+
+/*----------------------------------------медиа запрос для планшетов------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding-top: 5%;
+    }
+
+/*----------------------------------------Header------------------------------------------------*/
+    .header-container {
+        grid-area: hd;
+        display: grid;
+        grid-template-columns: 4% 1fr 0.2fr 2.2fr 4%;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: 
+            ". . . . ."
+            ". header-logo . header-nav .";
+    }
+
+    .main-container {
+        grid-area: mn;
+    }
+
+    .header-logo {
+        grid-area: header-logo;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .header-nav {   
+        grid-area: header-nav;
+        display: grid;
+        grid-template-columns: repeat(4, auto);    
+        column-gap: 2%;
+        align-items: center;
+        justify-items: end;
+    }   
+
+    .header-nav a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.8em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+    .header-nav button {
+        justify-content: center;
+        align-items: center;
+        width: 5.5em;
+        height: 2.5em;    
+        background: #FFFFFF;
+        border: 1px solid #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.7em;
+        line-height: 2em;
+        color: #3730A3;
+    }
+
+/*----------------------------------------Main------------------------------------------------*/
+/*----------------------------------------Firstpage-------------------------------------------*/
+
+    .firstpage {
+        display: grid;
+        grid-template-columns: 4% 1.2fr 1fr 4%;         
+        grid-template-areas: 
+            ". about-desighner fotodisaighner .";
+        margin: 7em 0 3em;
+    }
+    
+    .about-desighner {
+        grid-area: about-desighner;   
+        margin-right: 2%;
+    }
+    
+    .fotodisaighner {
+        grid-area: fotodisaighner; 
+        width: 100%;  
+        max-width: 100%; 
+        
+    }
+    
+    .about-desighner h1 {
+        margin: 0 0 0.8em;
+        font-weight: 700;
+        font-size: 3em;
+        line-height: 1.2em;
+        color: #1F2937;
+    }
+
+    .about-desighner h2 {
+        margin: 0 0 0.7em;
+        font-weight: 500;
+        font-size: 2em;
+        line-height: 1.2em;
+        color: #4338CA;   
+    }
+    
+    .first-p {
+        margin: 0 0 2em;
+        font-weight: 400;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+    .second-p {
+        display: none;
+        font-weight: 400;
+        font-size: 1.7em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+
+    .buttons-firstpage {
+        margin: 0 0 5em;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        column-gap: 1%;
+        justify-items:start;
+    }
+
+    button.hire-me {    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 6em;
+        height: 2.8em;
+        background: #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: #FFFFFF;
+    }
+    
+    .read-more {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 7em;
+        height: 2.8em;
+        background: #FFFFFF;
+        border: 1px solid #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    /*----------------------------------------Secondpage-------------------------------------------*/
+    .secondpage {
+        display: grid;
+        grid-template-columns: 4% 1fr 4%;
+        grid-template-areas: 
+        ". mission .";
+        margin-bottom: 7em;
+    }
+
+    .mission {
+        grid-area: mission;
+        font-weight: 600;
+        font-size: 3em;
+        line-height: 1.2em;
+        text-align: center;
+        color: #1F2937;
+    }    
+
+    /*----------------------------------------Thirdpage-------------------------------------------*/
+    .thirdpage {
+        display: grid;
+        grid-template-columns: 4% 1fr 1fr 4%;   
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+            ". disighnworks disighnworks ."
+            ". part1 part4 ."
+            ". part2 part5 ."
+            ". part3 part6 .";
+        column-gap: 2%;    
+        margin-bottom: 7em;
+    }
+    
+    .disighnworks {
+        grid-area: disighnworks;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .thirdpage-part-one {
+        grid-area: part1;
+    }
+    
+    .thirdpage-part-two {
+        grid-area: part2;
+    }
+    
+    .thirdpage-part-three {
+        grid-area: part3;
+    }
+    
+    .thirdpage-part-four {
+        grid-area: part4;
+    }
+    
+    .thirdpage-part-five {
+        grid-area: part5;
+    }
+    
+    .thirdpage-part-six {
+        grid-area: part6;
+    }
+
+    .thirdpage h3 {
+        font-weight: 600;
+        font-size: 2.5em;
+        line-height: 1.8em;
+        color: #1F2937;
+    }
+    
+    .activity {
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+    .seeworks {
+        font-weight: 500;
+        font-size: 2em;
+        line-height: 1.5em;
+        color: #3730A3;
+    }
+
+    /*----------------------------------------Fourthpage-------------------------------------------*/
+    .fourthpage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:   
+            "trust-p"
+            "clients";
+        background: #FEF2F2;  
+        margin-bottom: 9em;
+        padding: 0% 4% 0%;
+    }
+
+    .clients {
+        padding-bottom: 5em;
+        grid-area: clients;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-self: center;
+    }
+
+    .client-company{
+        width: 80%;
+        max-width: 80%;
+        height: 100%;
+    }
+
+    .fourthpage p {
+        padding-top: 2em;
+        grid-area: trust-p;
+        font-weight: 400;
+        font-size: 2.3em;
+        line-height: 1.5em;
+        color: #9CA3AF;    
+    }
+
+    /*----------------------------------------Fifthpage-------------------------------------------*/
+    .fifthpage {
+        display: grid;
+        grid-template-columns: 4% 5fr 4%;
+        grid-template-areas: 
+        ". customerfeed .";
+        margin-bottom: 9em;
+    }
+
+    .customerfeed {
+        grid-area: customerfeed;
+        font-weight: 600;
+        font-size: 3em;
+        line-height: 1.2em;
+        text-align: center;
+        color: #1F2937;
+    }
+
+    /*----------------------------------------Sixpage-------------------------------------------*/
+    .sixpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "bus door"
+        "trees door"
+        "stick stick";
+        gap: 2%;
+        margin-bottom: 15em;
+    }
+    
+    .bus {
+        grid-area: bus;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .door {
+        grid-area: door;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .trees {
+        grid-area: trees;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .stick {
+        grid-area: stick;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    /*----------------------------------------Seventhpage-------------------------------------------*/
+    .seventhpage {
+        display: grid;
+        grid-template-columns: 4% 1fr 1fr 1fr 4%;  
+        grid-template-areas: 
+            ". chart dollar loupe .";
+        text-align: center;
+        gap: 5%;    
+        margin-bottom: 10em;
+    }
+    
+    .chart {
+        grid-area: chart;
+    }
+
+    .dollar {
+        grid-area: dollar;
+    }
+    
+    .loupe {
+        grid-area: loupe;
+    }
+
+    .seventhpage-photo {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .seventhpage h5 {
+        font-weight: 600;
+        font-size: 2.5em;
+        line-height: 1.2em;
+        text-align: center;
+        color: #374151;
+        margin-bottom: 1em;
+    }
+    
+    .seventhpage p {
+        font-weight: 400;
+        font-size: 1.8em;
+        line-height: 1.6em;
+        text-align: center;
+        color: #9CA3AF;
+    } 
+
+    /*----------------------------------------Eightpage-------------------------------------------*/
+    .eightpage {
+        display:grid;
+        grid-template-columns: 4% 1fr 1fr 4%;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas:         
+            ". career career ."
+            ". company position .";
+        justify-items: center;
+        margin-bottom: 10em;    
+        column-gap: 5%;
+    }
+    
+    .company {
+        grid-area: company;
+    }
+    
+    .position {
+        grid-area: position;
+    }
+    
+    .year {
+        display: none;
+    }
+
+    .career {
+        grid-area: career;
+        font-weight: 600;
+        font-size: 3.5em;
+        line-height: 1em;
+        text-align: center;
+        color: #1F2937;
+    }
+    
+    .eightpage h5 {
+        font-weight: 500;
+        font-size: 1.8em;
+        line-height: 1em;
+        color: #6B7280;
+        text-align: center;
+    }
+    
+    .eightpage p {
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+    .company-style {
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 1.5em;
+        color: #1F2937;
+    }
+    
+    /*----------------------------------------Footer-------------------------------------------*/
+    .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 1fr 0.6fr 0.8fr;
+        grid-template-areas:     
+        ". contact ."
+        ". footer-p ."
+        ". networks .";
+        text-align: center;
+        background: #FEF2F2;
+    }
+    
+    .networks {
+        grid-area: networks;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer h4 {
+        grid-area: contact;
+        font-weight: 500;
+        font-size: 3.5em;
+        line-height: 1.5em;
+        text-align: center;
+        color: #374151;
+    }
+
+    .footer p {
+        grid-area: footer-p;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.8em;
+        text-align: center;
+        color: #9CA3AF;
+    }
+} 
+
+
+/*-----------------------------медиа запрос для смартфонов (для средних и больших)-------------------------------------*/
+
+@media screen and (min-width: 350px) and (max-width:767px) {
+/*----------------------------------------Header------------------------------------------------*/
+    .container {
+        padding: 10% 4% 0%
+    }
+
+    .header-container {
+        grid-area: hd;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 
+            "header-logo"
+            "header-nav";     
+        margin-bottom: 5em;  
+    }
+
+    .header-logo {
+        grid-area: header-logo;
+        justify-self: center;
+        width: 40%;
+        max-width: 40%;
+    }
+
+    .header-nav {   
+        grid-area: header-nav;
+        display: grid;
+        grid-template-columns: repeat(4, auto);    
+        align-items: center;
+        justify-items: end;
+        column-gap: 3%;
+    }   
+
+    .header-nav a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.3em;
+        line-height: 1em;
+        color: #6B7280;
+    }
+        
+    .header-nav button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3em 1em;
+        width: 6.5em;
+        height: 2.5em;    
+        background: #FFFFFF;
+        border: 1px solid #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.3em;
+        line-height: 1.8em;
+        color: #3730A3;
+    }
+
+    /*----------------------------------------Main------------------------------------------------*/
+    /*----------------------------------------Firstpage-------------------------------------------*/
+    .firstpage {
+        display: grid;
+        grid-template-columns: 1fr;  
+        grid-template-rows: 1.3fr 0.5fr;
+        grid-template-areas: 
+            "about-desighner"
+            "fotodisaighner";
+        margin-bottom: 4em;   
+    }
+    
+    .about-desighner {
+        grid-area: about-desighner;   
+    }
+    
+    .fotodisaighner {
+        grid-area: fotodisaighner; 
+        width: 100%;   
+        max-width: 100%;
+        height: 90%;
+    }
+
+    h1,
+    h2,
+    .first-p,
+    .second-p {
+        text-align: center;
+    }
+
+    .about-desighner h2 {
+        margin: 0 0 2.5em;
+        font-weight: 500;
+        font-size: 2em;
+        line-height: 1.8em;
+        color: #4338CA;   
+    }
+    
+    .about-desighner h1 {
+        margin: 0 0 0.7em;
+        font-weight: 700;
+        font-size: 2.9em;
+        line-height: 1em;
+        color: #1F2937;
+    }
+
+    .first-p {
+        margin: 0 0 2.5em;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+    .second-p {
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1em;
+        color: #6B7280;
+    }
+    
+    .buttons-firstpage {
+        margin: 0 0 2em;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        column-gap: 3%;
+    }
+
+    button.hire-me {    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3em 1em;
+        width: 6.5em;
+        height: 2.5em;  
+        background: #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.4em;
+        line-height: 1.5em;
+        color: #FFFFFF;
+    }
+    
+    .read-more {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3em 1em;
+        width: 7.5em;
+        height: 2.5em;  
+        background: #FFFFFF;
+        border: 1px solid #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+
+    /*----------------------------------------Secondpage-------------------------------------------*/
+    .secondpage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "mission";
+        margin-bottom: 4em;
+    }
+
+    .mission {
+        grid-area: mission;
+        font-weight: 600;
+        font-size: 2em;
+        line-height: 1.3em;
+        text-align: center;
+        color: #1F2937;
+    }
+    
+    /*----------------------------------------Thirdpage-------------------------------------------*/
+    .thirdpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+        grid-template-rows: 1fr 0.6fr 0.6fr 0.6fr;
+        grid-template-areas: 
+            "disighnworks disighnworks"
+            "part1 part4"
+            "part2 part5"
+            "part3 part6";           
+        margin-bottom: 4em;
+        column-gap: 3%;
+        text-align:left;
+    }
+    
+    .disighnworks {
+        grid-area: disighnworks;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .thirdpage-part-one {
+        grid-area: part1;
+    }
+    
+    .thirdpage-part-two {
+        grid-area: part2;
+    }
+    
+    .thirdpage-part-three {
+        grid-area: part3;
+    }
+    
+    .thirdpage-part-four {
+        grid-area: part4;
+    }
+    
+    .thirdpage-part-five {
+        grid-area: part5;
+    }
+    
+    .thirdpage-part-six {
+        grid-area: part6;
+    }
+
+    .thirdpage h3 {
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 1.6em;
+        color: #1F2937;
+    }
+    
+    .activity {
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        color: #6B7280;
+    }
+    
+    .seeworks {
+        font-weight: 500;
+        font-size: 1.1em;
+        line-height: 1.1em;
+        color: #3730A3;
+    }
+
+    /*----------------------------------------Fourthpage-------------------------------------------*/
+    .fourthpage {
+        display: none;
+    }
+
+    /*----------------------------------------Fifthpage-------------------------------------------*/
+    .fifthpage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "customerfeed";
+        margin-bottom: 5em;
+    }
+
+    .customerfeed{
+        grid-area: customerfeed;
+        font-weight: 600;
+        font-size: 2em;
+        line-height: 1.3em;
+        text-align: center;
+        color: #1F2937;
+    }
+
+    /*---------------------------------------Sixpage-------------------------------------------*/
+    .sixpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "bus door"
+        "trees door"
+        "stick stick";
+        gap: 2%;
+        margin-bottom: 4em;
+    }
+    
+    .bus {
+        grid-area: bus;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .door {
+        grid-area: door;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .trees {
+        grid-area: trees;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .stick {
+        grid-area: stick;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    /*----------------------------------------Seventhpage-------------------------------------------*/
+    .seventhpage {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.1fr;  
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            ". chart ."
+            ". dollar ."
+            ". loupe .";
+        text-align: center;
+        gap: 5%;    
+        margin-bottom: 12em;
+    }
+    
+    .chart {
+        grid-area: chart;
+    }
+    
+    .dollar {
+        grid-area: dollar;
+    }
+    
+    .loupe {
+        grid-area: loupe;
+    }
+
+    .seventhpage h5 {
+        font-weight: 600;
+        font-size: 1.7em;
+        line-height: 1.3em;
+        text-align: center;
+        color: #374151;
+    }
+    
+    .seventhpage p {
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        text-align: center;
+        color: #9CA3AF;
+    } 
+
+    /*----------------------------------------Eightpage-------------------------------------------*/
+    .eightpage {
+        display:none;
+    }
+
+    /*----------------------------------------Footer-------------------------------------------*/
+    .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.5fr 1fr;
+        grid-template-areas:     
+        ". contact ."
+        ". footer-p ."
+        ". networks .";
+        text-align: center;
+        background: #FEF2F2;
+    }
+    
+    .networks {
+        grid-area: networks;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer h4 {
+        grid-area: contact;
+        font-weight: 500;
+        font-size: 2em;
+        line-height: 1em;
+        text-align: center;
+        color: #374151;
+    }
+
+    .footer p {
+        grid-area: footer-p;
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.8em;
+        text-align: center;
+        color: #9CA3AF;
+    }
+} 
+
+
+/*-----------------------------медиа запрос для смартфонов (для маленьких)-------------------------------------*/
+
+@media screen and (max-width:349px) {
+/*----------------------------------------Header------------------------------------------------*/
+    .container {
+        padding: 10% 4% 0%;
+    }
+
+    .header-container {
+        grid-area: hd;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 
+            "header-logo"
+            "header-nav";     
+        margin-bottom: 4em;  
+    }
+
+    .header-logo {
+        grid-area: header-logo;
+        justify-self: center;
+        width: 40%;
+        max-width: 40%;
+    }
+
+    .header-nav {   
+        grid-area: header-nav;
+        display: grid;
+        grid-template-columns: repeat(4, auto);    
+        align-items: center;
+        justify-items: end;
+    }   
+
+    .header-nav a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1.8em;
+        color: #6B7280;
+    }
+        
+    .header-nav button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2em 0.3em;
+        width: 5em;
+        height: 2.3em;    
+        background: #FFFFFF;
+        border: 1px solid #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.1em;
+        line-height: 1.8em;
+        color: #3730A3;
+    }
+
+/*----------------------------------------Main------------------------------------------------*/
+/*----------------------------------------Firstpage-------------------------------------------*/
+    .firstpage {
+        display: grid;
+        grid-template-columns: 1fr;  
+        grid-template-rows: 1.6fr 0.5fr;
+        grid-template-areas: 
+            "about-desighner"
+            "fotodisaighner";
+        margin-bottom: 4em;   
+    }
+    
+    .about-desighner {
+        grid-area: about-desighner;   
+    }
+    
+    .fotodisaighner {
+        grid-area: fotodisaighner; 
+        width: 100%;   
+        height: 100%;
+    }
+
+    h1,
+    h2,
+    .first-p,
+    .second-p {
+        text-align: center;
+    }
+
+    .about-desighner h1 {
+        margin: 0 0 0.7em;
+        font-weight: 700;
+        font-size: 2.5em;
+        line-height: 1em;
+        color: #1F2937;
+    }
+
+    .about-desighner h2 {
+        margin: 0 0 2.5em;
+        font-weight: 500;
+        font-size: 2em;
+        line-height: 1.8em;
+        color: #4338CA;   
+    }
+    
+    .first-p {
+        margin: 0 0 2.5em;
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+    .second-p {
+        font-weight: 400;
+        font-size: 0.9em;
+        line-height: 1.5em;
+        color: #6B7280;
+    }
+    
+
+    .buttons-firstpage {
+        margin: 0 0 2.5em;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        column-gap: 3%;
+    }
+
+    button.hire-me {    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2em 0.3em;
+        width: 5em;
+        height: 2.3em;  
+        background: #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.4em;
+        line-height: 1.5em;
+        color: #FFFFFF;
+    }
+    
+    .read-more {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2em 0.3em;
+        width: 6em;
+        height: 2.3em;  
+        background: #FFFFFF;
+        border: 1px solid #3730A3;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+
+/*----------------------------------------Secondpage-------------------------------------------*/
+    .secondpage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "mission";
+        margin-bottom: 4em;
+    }
+
+    .mission {
+        grid-area: mission;
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        text-align: center;
+        color: #1F2937;
+    }   
+
+/*----------------------------------------Thirdpage-------------------------------------------*/
+    .thirdpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+        grid-template-rows: 0.8fr 0.7fr 0.7fr 0.7fr;
+        grid-template-areas: 
+            "disighnworks disighnworks"
+            "part1 part4"
+            "part2 part5"
+            "part3 part6";           
+        margin-bottom: 8em;
+        gap: 3%;
+        text-align:left;
+        justify-self: stretch;
+    }
+    
+    .disighnworks {
+        grid-area: disighnworks;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1em;
+    }
+    
+    .thirdpage-part-one {
+        grid-area: part1;
+    }
+    
+    .thirdpage-part-two {
+        grid-area: part2;
+    }
+    
+    .thirdpage-part-three {
+        grid-area: part3;
+    }
+    
+    .thirdpage-part-four {
+        grid-area: part4;
+    }
+    
+    .thirdpage-part-five {
+        grid-area: part5;
+    }
+    
+    .thirdpage-part-six {
+        grid-area: part6;
+    }
+
+    .thirdpage h3 {
+        font-weight: 600;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        color: #1F2937;
+    }
+    
+    .activity {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.1em;
+        color: #6B7280;
+    }
+    
+    .seeworks {
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1.1em;
+        color: #3730A3;
+    }
+
+/*----------------------------------------Fourthpage-------------------------------------------*/
+    .fourthpage {
+        display: none;
+    }
+
+/*----------------------------------------Fifthpage-------------------------------------------*/
+    .fifthpage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "customerfeed";
+        margin-bottom: 5em;
+    }
+
+    .customerfeed {
+        grid-area: customerfeed;
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        text-align: center;
+        color: #1F2937;
+    }
+
+/*---------------------------------------Sixpage-------------------------------------------*/
+    .sixpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "bus bus"
+        "trees trees"
+        "stick stick";
+        gap: 1%;
+        margin-bottom: 7em;
+    }
+    
+    .bus {
+        grid-area: bus;
+        width: 100%;
+        max-width: 100%;
+        height: 95%;
+    }
+    
+    .door {
+        grid-area: door;
+        width: 100%;
+        max-width: 100%;
+        height: 95%;
+        display: none;
+    }
+    
+    .trees {
+        grid-area: trees;
+        width: 100%;
+        max-width: 100%;
+        height: 95%;
+    }
+    
+    .stick {
+        grid-area: stick;
+        width: 100%;
+        max-width: 100%;
+        height: 95%;
+    }
+
+/*----------------------------------------Seventhpage-------------------------------------------*/
+    .seventhpage {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.1fr;  
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            ". chart ."
+            ". dollar ."
+            ". loupe .";
+        text-align: center;
+        gap: 5%;    
+        margin-bottom: 10em;
+    }
+    
+    .chart {
+        grid-area: chart;
+    }
+    
+    .dollar {
+        grid-area: dollar;
+    }
+    
+    .loupe {
+        grid-area: loupe;
+    }
+
+    .seventhpage h5 {
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        text-align: center;
+        color: #374151;
+        margin-bottom: 1em;
+    }
+    
+    .seventhpage p {
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        text-align: center;
+        color: #9CA3AF;
+    } 
+
+/*----------------------------------------Eightpage-------------------------------------------*/
+    .eightpage {
+        display:none;
+    }
+    
+/*----------------------------------------Footer-------------------------------------------*/
+    .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.6fr;
+        grid-template-areas:     
+        ". contact ."
+        ". footer-p ."
+        ". networks .";
+        text-align: center;
+        background: #FEF2F2;
+    }
+    
+    .networks {
+        grid-area: networks;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer h4 {
+        grid-area: contact;
+        font-weight: 500;
+        font-size: 2em;
+        line-height: 1em;
+        text-align: center;
+        color: #374151;
+    }
+
+    .footer p {
+        grid-area: footer-p;
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        text-align: center;
+        color: #9CA3AF;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "hd hd hd hd"
+            "m m m sd"
+            "m m m sd"
+            "m m m sd"
+            "m m m sd"
+            "ft ft ft ft";
+    
+        height: 100vh;
+        width: 100vw;
+        gap:10px;
+        text-align: center;
+    }
+
+    .main {
+        grid-area: m;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+            "m-hd m-hd"
+            "m-hd m-hd"
+            "m-one m-two"
+            "m-three m-three";
+        column-gap: 1%;
+        row-gap: 2%;
+        background-color: rgb(243, 227, 207);
+    }     
+    
+        
+    .sidebar {
+        grid-area: sd;
+        background-color: lightgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    
+.footer {
+    grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    font-size: 1.2em;
+    background-color: rgb(198, 193, 193);
+    
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "hd hd hd"
+            "m m m"
+            "m m m"
+            "m m m"
+            "m m m"
+            "sd sd sd"
+            "ft ft ft";
+    
+        height: 100vh;
+        width: 100vw;
+        gap:10px;
+        text-align: center;
+    }
+
+    .main {
+        grid-area: m;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+            "m-hd m-hd"
+            "m-hd m-hd"
+            "m-one m-two"
+            "m-three m-three";
+        column-gap: 1%;
+        row-gap: 2%;
+        background-color: rgb(243, 227, 207);
+    }     
+    
+        
+    .sidebar {
+        grid-area: sd;
+        background-color: lightgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    
+.footer {
+    grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    font-size: 1.2em;
+    background-color: rgb(198, 193, 193);
+    
+}
+
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "hd"
+            "m"
+            "m"
+            "m"
+            "m"
+            "m"
+            "ft";
+    
+        height: 100vh;
+        width: 100vw;
+        gap:10px;
+        text-align: center;
+    }
+
+    .main {
+        grid-area: m;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+            "m-hd"
+            "m-hd"
+            "m-one"
+            "m-two"
+            "m-three";
+        column-gap: 1%;
+        row-gap: 2%;
+        background-color: rgb(243, 227, 207);
+    }   
+
+    .sidebar {
+        display: none;
+    }
+
+
+.footer {
+    grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    font-size: 1em;
+    background-color: rgb(198, 193, 193);
+    
+}
+
+}
+
+.header {
+    grid-area: hd;
+    text-align: center;
+    vertical-align: middle;   
+    background-color: rgb(198, 193, 193);    
+    
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1.5em;    
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.main-header {
+    grid-area: m-hd;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-one {
+    grid-area: m-one;
+
+}
+
+.main-two {
+    grid-area: m-two;
+}
+
+.main-three {
+    grid-area: m-three;
+}
+
+.main-one,
+.main-two,
+.main-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 209, 148);
+    font-size: 1.2em;
+}
+
+.footer-one,
+.footer-two,
+.footer-three,
+.footer-four {
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+}
